@@ -1,6 +1,6 @@
 self.addEventListener("install", event => {
   event.waitUntil(
-    caches.open("v10").then(cache => {
+    caches.open("v0").then(cache => {
       return cache.addAll([
         "./",
         "./index.html",
@@ -17,5 +17,3 @@ self.addEventListener("fetch", event => {
   );
 
 });
-
-
